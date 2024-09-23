@@ -1,0 +1,15 @@
+{
+  "name": "portfolio2024_n",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "deploy": "gh-pages -d dist",
+    "homepge":"https://MzabiCoder.github.io/Portfolio2024_N"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "gh-pages": "^6.1.1"
+  }
+}
