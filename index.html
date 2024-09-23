@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website - Easy Tutorials</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav data-aos="fade-down">
+            <h1 style="font-size: 4rem;"> <span>N</span>abil.</h1>
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">My Work</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fas fa-times" onclick="closemenu()"></i>
+            </ul>
+            <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>Front End / UI Engineer </p>
+            <h1>Hi, I'm <span>Nabil</span><br>Jen From San Francisco</h1>
+        </div>
+    </div>
+</div>
+<!-- -----------about---------- -->
+<div id="about" data-aos="fade-left">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/profile.jpeg">
+            </div>
+            <div class="about-col-2">
+                <div class="center">
+                <h1 class="sub-title">About Me</h1>
+                <p>Creative web developer and communication professional, specialized in Object- Oriented
+                    Programming and design, with the ability to adapt to new emerging technologies.
+                    Firsthand knowledge in web application building from the design to deployment.</p>
+            </div>
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Front End Engineering</span><br> JavaScript, TypeScript, React, HTML, CSS, SASS, Node, NPM...</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>9/2021 - 9/2023</span><br>UI Engineer at IBM</li>
+                        <li><span>11/2020 - 7/2021</span><br>Front End Engineer at Costar Group</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2009</span><br>Web Engineering degree from EMSI Morocco</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ---------services---------------- -->
+<div id="services" data-aos="fade-right">
+    <div class="container center">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="pointer fas fa-code"></i>
+                <h2>Web Applications</h2>
+                <p>Work with Product Designers to implement the next generation of websites & apps, Build efficient and reusable front-end and systems that are intuitive, efficient.</p>
+            </div>
+            <div>
+                <i class="fas fa-crop-alt"></i>
+                <h2>User interfaces</h2>
+                <p>Keep the interface simple, Create consistency and use common UI elements. Strategically use color and texture & Use typography to create hierarchy and clarity.</p>
+            </div>
+            <div>
+                <i class="fab fa-app-store"></i>
+                <h2>Testing</h2>
+                <p>Test each component individually and how they behave when integrated via jest for instance. The entire testing involves unit testing, component testing, end-to-end testing, and cross browser compatibility testing (using cypress GUI steps).</p>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ----------portfolio------------ -->
+<div id="portfolio" data-aos="fade-up">
+    <div class="container center">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="https://images.pexels.com/photos/4691211/pexels-photo-4691211.jpeg?auto=compress&cs=tinysrgb&w=1600">
+                <div class="layer">
+                    <div>
+                       <a href="https://github.com/MzabiCoder/winerie" target="_blank">
+                       <i class="fab fa-github fa-3x"></i>
+                      </a>
+                    </div>
+                    <div>
+                        <a href="https://mzabicoder.github.io/winerie/" target="_blank">
+                        <i class="fas fa-eye fa-3x"></i>
+                       </a>
+                     </div>
+                </div>
+            </div>
+            <div class="work">
+                <img src="https://images.pexels.com/photos/2102934/pexels-photo-2102934.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500">
+                <div class="layer">
+                    <div>
+                       <a href="https://github.com/MzabiCoder/ComptoirRestaurant" target="_blank">
+                       <i class="fab fa-github fa-3x"></i>
+                      </a>
+                    </div>
+                    <div>
+                        <a href="https://mzabicoder.github.io/ComptoirRestaurant/" target="_blank">
+                        <i class="fas fa-eye fa-3x"></i>
+                       </a>
+                     </div>
+                </div>
+            </div>
+            <div class="work">
+                <img src="https://images.pexels.com/photos/16666938/pexels-photo-16666938/free-photo-of-elegant-flatware-on-table-in-restaurant.jpeg?auto=compress&cs=tinysrgb&w=1600">
+                 <div class="layer">
+                    <div>
+                       <a href="https://github.com/MzabiCoder/reactProjec" target="_blank">
+                       <i class="fab fa-github fa-3x"></i>
+                      </a>
+                    </div>
+                    <div>
+                        <a href="http://MzabiCoder.github.io/reactProjec" target="_blank">
+                         <i class="fas fa-eye fa-3x"></i>
+                       </a>
+                     </div>
+                </div>
+            </div>
+            
+            <div class="work">
+                <img src="https://images.pexels.com/photos/3434523/pexels-photo-3434523.jpeg?auto=compress&cs=tinysrgb&w=1600">
+                 <div class="layer">
+                    <div>
+                       <a href="https://github.com/MzabiCoder/mikisteakhouse_business" target="_blank">
+                       <i class="fab fa-github fa-3x"></i>
+                      </a>
+                    </div>
+                    <div>
+                        <a href="https://mzabicoder.github.io/mikisteakhouse_business/" target="_blank">
+                        <i class="fas fa-eye fa-3x"></i>
+                       </a>
+                     </div>
+                </div>
+            </div>
+            <div class="work">
+                <img src="https://images.pexels.com/photos/5632379/pexels-photo-5632379.jpeg?auto=compress&cs=tinysrgb&w=800">
+                 <div class="layer">
+                    <div>
+                       <a href="https://github.com/MzabiCoder/MERNFinal" target="_blank">
+                       <i class="fab fa-github fa-3x"></i>
+                      </a>
+                    </div>
+                    <div>
+                        <a href="https://myshop-sl5l.onrender.com/" target="_blank">
+                        <i class="fas fa-eye fa-3x"></i>
+                       </a>
+                       <span class="style" style="font-size: 15px;">username:admin@email.com password:123456</span>
+                     </div>
+                </div>
+            </div>
+        </div>
+        <!-- <a href="#" class="btn">See more</a> -->
+    </div>
+</div>
+<!-- ----------contact------------- -->
+<div id="contact">
+    <div class="container center">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fas fa-paper-plane"></i> mzabi30@gmail.com</p>
+                <p><i class="fas fa-phone-square-alt"></i> 4155747713</p>
+                <div class="social-icons">
+                     <a target="_blank" href="https://www.linkedin.com/in/nabil-fannane-34828741/"><i class="fab fa-linkedin"></i></a>
+                </div>
+                <a href="images/my-cv.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-down">
+                <form method="post" action="post" name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright © Nabil Fannane.</p>
+    </div>
+</div>
+
+
+
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+</script>
+
+<script>
+
+    var sidemeu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemeu.style.right = "0";
+    }
+    function closemenu(){
+        sidemeu.style.right = "-200px";
+    }
+
+</script>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbxhttqLzBaKxWgmVj_pRrh8QzvzpC5MZmJ940uu5-AEWKhjK0r0Rpevm9-WL_2kcToI/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        offset:400,
+        duration:900
+      });
+    </script>
+</body>
+</html>
